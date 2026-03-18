@@ -1,0 +1,12 @@
+ds_mentoring3:
+  outputs:
+    dev:
+      dbname: pactravel-dwh
+      host: localhost
+      pass: mypassword
+      port: 5435
+      schema: final
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev

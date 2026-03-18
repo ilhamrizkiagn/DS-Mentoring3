@@ -1,0 +1,20 @@
+version: 2
+
+seeds:
+  - name: dim_date
+    description: "Generated date for analytic"
+    columns:
+      - name: date_id
+        description: "identifier date"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key
+
+  - name: dim_time
+    description: "Generated time for analytic"
+    columns:
+      - name: time_id
+        description: "identifier time"
+        tests:
+          - not_null
+          - dbt_constraints.primary_key

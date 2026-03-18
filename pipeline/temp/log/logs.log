@@ -1,0 +1,58 @@
+2026-03-17 22:40:05,490 - INFO - ==================================STARTING EXTRACT DATA=======================================
+2026-03-17 22:40:05,554 - INFO - EXTRACT 'aircrafts' - SUCCESS.
+2026-03-17 22:40:05,594 - INFO - EXTRACT 'airlines' - SUCCESS.
+2026-03-17 22:40:05,611 - INFO - EXTRACT 'airports' - SUCCESS.
+2026-03-17 22:40:05,639 - INFO - EXTRACT 'customers' - SUCCESS.
+2026-03-17 22:40:05,695 - INFO - EXTRACT 'hotel' - SUCCESS.
+2026-03-17 22:40:05,922 - INFO - EXTRACT 'flight_bookings' - SUCCESS.
+2026-03-17 22:40:05,954 - INFO - EXTRACT 'hotel_bookings' - SUCCESS.
+2026-03-17 22:40:05,955 - INFO - Extract All Tables From Sources - SUCCESS
+2026-03-17 22:40:05,971 - INFO - ==================================ENDING EXTRACT DATA=======================================
+2026-03-17 22:40:05,974 - INFO - [pid 3701] Worker Worker(salt=7409035835, workers=1, host=DESKTOP-576KSFG, username=ilham, pid=3701) done      Extract()
+2026-03-17 22:40:05,982 - DEBUG - 1 running tasks, waiting for next task to finish
+2026-03-17 22:40:05,987 - INFO - Informed scheduler that task   Extract__99914b932b   has status   DONE
+2026-03-17 22:40:05,989 - DEBUG - Asking scheduler for work...
+2026-03-17 22:40:05,991 - DEBUG - Pending tasks: 2
+2026-03-17 22:40:05,994 - INFO - [pid 3701] Worker Worker(salt=7409035835, workers=1, host=DESKTOP-576KSFG, username=ilham, pid=3701) running   Load()
+2026-03-17 22:40:06,023 - INFO - Read Load Query - SUCCESS
+2026-03-17 22:40:06,170 - INFO - Read Extracted Data - SUCCESS
+2026-03-17 22:40:06,172 - INFO - Connect to DWH - SUCCESS
+2026-03-17 22:40:09,110 - INFO - Truncate pactravel Schema in DWH - SUCCESS
+2026-03-17 22:40:09,111 - INFO - ==================================STARTING LOAD DATA=======================================
+2026-03-17 22:40:09,171 - INFO - LOAD 'pactravel.aircrafts' - SUCCESS
+2026-03-17 22:40:09,295 - INFO - LOAD 'pactravel.airlines' - SUCCESS
+2026-03-17 22:40:09,338 - INFO - LOAD 'pactravel.airports' - SUCCESS
+2026-03-17 22:40:09,429 - INFO - LOAD 'pactravel.customers' - SUCCESS
+2026-03-17 22:40:09,602 - INFO - LOAD 'pactravel.hotel' - SUCCESS
+2026-03-17 22:40:11,829 - INFO - LOAD 'pactravel.flight_bookings' - SUCCESS
+2026-03-17 22:40:11,893 - INFO - LOAD 'pactravel.hotel_bookings' - SUCCESS
+2026-03-17 22:40:11,894 - INFO - LOAD All Tables To DWH-pactravel - SUCCESS
+2026-03-17 22:40:11,909 - INFO - ==================================ENDING LOAD DATA=======================================
+2026-03-17 22:40:11,911 - INFO - [pid 3701] Worker Worker(salt=7409035835, workers=1, host=DESKTOP-576KSFG, username=ilham, pid=3701) done      Load()
+2026-03-17 22:40:11,914 - DEBUG - 1 running tasks, waiting for next task to finish
+2026-03-17 22:40:11,916 - INFO - Informed scheduler that task   Load__99914b932b   has status   DONE
+2026-03-17 22:40:11,917 - DEBUG - Asking scheduler for work...
+2026-03-17 22:40:11,919 - DEBUG - Pending tasks: 1
+2026-03-17 22:40:11,920 - INFO - [pid 3701] Worker Worker(salt=7409035835, workers=1, host=DESKTOP-576KSFG, username=ilham, pid=3701) running   Transform()
+2026-03-17 22:40:11,925 - INFO - ==================================STARTING TRANSFROM DATA=======================================
+[0m15:40:15  Running with dbt=1.11.7
+[0m15:40:16  Registered adapter: postgres=1.10.0
+[0m15:40:21  Found 16 models, 2 seeds, 1 operation, 61 data tests, 7 sources, 787 macros
+[0m15:40:21  
+[0m15:40:21  Concurrency: 1 threads (target='dev')
+[0m15:40:21  
+[0m15:40:21  1 of 79 START sql view model final.stg_pactravel-dwh_aircrafts ................. [RUN]
+[0m15:40:22  1 of 79 OK created sql view model final.stg_pactravel-dwh_aircrafts ............ [[32mCREATE VIEW[0m in 1.23s]
+[0m15:40:22  2 of 79 START sql view model final.stg_pactravel-dwh_airlines .................. [RUN]
+[0m15:40:23  2 of 79 OK created sql view model final.stg_pactravel-dwh_airlines ............. [[32mCREATE VIEW[0m in 0.67s]
+[0m15:40:23  3 of 79 START sql view model final.stg_pactravel-dwh_airports .................. [RUN]
+[0m15:40:24  3 of 79 OK created sql view model final.stg_pactravel-dwh_airports ............. [[32mCREATE VIEW[0m in 0.33s]
+[0m15:40:24  4 of 79 START sql view model final.stg_pactravel-dwh_customers ................. [RUN]
+[0m15:40:24  4 of 79 OK created sql view model final.stg_pactravel-dwh_customers ............ [[32mCREATE VIEW[0m in 0.32s]
+[0m15:40:24  5 of 79 START sql view model final.stg_pactravel-dwh_flight_bookings ........... [RUN]
+[0m15:40:24  5 of 79 OK created sql view model final.stg_pactravel-dwh_flight_bookings ...... [[32mCREATE VIEW[0m in 0.21s]
+[0m15:40:24  6 of 79 START sql view model final.stg_pactravel-dwh_hotel ..................... [RUN]
+[0m15:40:24  6 of 79 OK created sql view model final.stg_pactravel-dwh_hotel ................ [[32mCREATE VIEW[0m in 0.33s]
+[0m15:40:24  7 of 79 START sql view model final.stg_pactravel-dwh_hotel_bookings ............ [RUN]
+[0m15:40:25  7 of 79 OK created sql view model final.stg_pactravel-dwh_hotel_bookings ....... [[32mCREATE VIEW[0m in 0.36s]
+[0m15:40:25  8 of 79 START seed file final.dim_date ......................................... [RUN]

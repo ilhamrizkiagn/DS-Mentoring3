@@ -1,0 +1,31 @@
+[0m10:41:41.349469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a058beaf110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a058bf79bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a058beae750>]}
+
+
+============================== 10:41:41.367068 | db8eb7d2-adec-41ae-b317-0bfa9ad47526 ==============================
+[0m10:41:41.367068 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:41:41.369699 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'quiet': 'False', 'printer_width': '80', 'warn_error': 'None', 'indirect_selection': 'eager', 'log_path': 'logs', 'use_colors': 'True', 'log_format': 'default', 'profiles_dir': '/home/ilham/.dbt', 'cache_selected_only': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'empty': 'None', 'no_print': 'None', 'version_check': 'True', 'write_json': 'True'}
+[0m10:41:41.390476 [info ] [MainThread]: Creating dbt configuration folder at /home/ilham/.dbt
+[0m10:42:02.188276 [debug] [MainThread]: Starter project path: /home/ilham/miniconda3/envs/ds-mentoring3/lib/python3.11/site-packages/dbt/include/starter_project
+[0m10:42:03.037446 [info ] [MainThread]: 
+Your new dbt project "ds_mentoring3" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:42:03.040189 [info ] [MainThread]: Setting up your profile.
+[0m10:43:46.366291 [info ] [MainThread]: Profile ds_mentoring3 written to /home/ilham/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:43:46.370985 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 125.14075, "process_in_blocks": "8440", "process_kernel_time": 0.761675, "process_mem_max_rss": "108664", "process_out_blocks": "8", "process_user_time": 4.209029}
+[0m10:43:46.373262 [debug] [MainThread]: Command `dbt init` succeeded at 10:43:46.373006 after 125.14 seconds
+[0m10:43:46.375388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a058be7b7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a058beac390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a058c30d110>]}
+[0m10:43:46.378896 [debug] [MainThread]: Flushing usage events
+[0m10:43:53.019075 [debug] [MainThread]: An error was encountered while trying to flush usage events

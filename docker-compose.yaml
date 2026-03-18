@@ -2,10 +2,10 @@ version: '3'
 
 services:
   sources:
-    image: postgres:latest
+    image: postgres:16
     container_name: pactravel-src
     restart: always
-    environment:
+    environment: 
       - POSTGRES_DB=${SRC_POSTGRES_DB}
       - POSTGRES_USER=${SRC_POSTGRES_USER}
       - POSTGRES_PASSWORD=${SRC_POSTGRES_PASSWORD}
@@ -16,7 +16,7 @@ services:
       - source-volume:/var/lib/postgresql/data
 
   dwh:
-    image: postgres:latest
+    image: postgres:16
     container_name: pactravel-dwh
     restart: always
     environment:
